@@ -1,4 +1,4 @@
-# Brute
+# Brute - additional memory approach
 
 class Solution:
     def setZeroes(self, matrix: List[List[int]]) -> None:
