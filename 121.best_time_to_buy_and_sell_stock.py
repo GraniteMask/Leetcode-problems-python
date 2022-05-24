@@ -1,4 +1,5 @@
-## Brute 1 - Inefficient (limited test cases / not for large inputs)
+## Brute - Inefficient (limited test cases / not for large inputs)
+
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
         maxProfit = []
@@ -20,3 +21,27 @@ class Solution:
             return 0
         else:
             return max(maxProfit)
+
+
+## Optimized solution
+
+class Solution:
+    def maxProfit(self, prices: List[int]) -> int:
+        l, r = 0, 1
+        maxProfit=0
+        
+        for i in range(len(prices)-1):
+            if prices[l] > prices[r]:
+                l=r
+            elif prices[r] > prices[l]:
+                if maxProfit == 0:
+                    maxProfit = prices[r] - prices[l]
+                else:
+                    temp = prices[r] - prices[l]
+                    if temp > maxProfit:
+                        maxProfit = temp
+                        
+            r=r+1
+            
+        return maxProfit
+            
