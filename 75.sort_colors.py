@@ -1,4 +1,4 @@
-# Brute - Swapping approach
+# Brute Method - Swapping approach
 
 class Solution:
     def sortColors(self, nums: List[int]) -> None:
