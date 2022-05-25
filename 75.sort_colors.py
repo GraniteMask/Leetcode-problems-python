@@ -1,5 +1,5 @@
-# Optimized in terms of memory usage 
- 
+# Brute - Swapping approach
+
 class Solution:
     def sortColors(self, nums: List[int]) -> None:
         """
@@ -13,7 +13,7 @@ class Solution:
                     nums[j] = temp
                     print(nums)
 
-# Optimized in terms of Runtime
+# Optimized Solution
 
 class Solution:
     def sortColors(self, nums: List[int]) -> None:
