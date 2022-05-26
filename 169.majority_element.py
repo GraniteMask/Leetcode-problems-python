@@ -11,3 +11,12 @@ class Solution:
             
             if count == len(nums) // 2:
                 return nums[i]
+
+# More Efficient solution
+
+class Solution:
+    def majorityElement(self, nums: List[int]) -> int:
+             
+        nums.sort()
+            
+        return nums[len(nums)//2]
