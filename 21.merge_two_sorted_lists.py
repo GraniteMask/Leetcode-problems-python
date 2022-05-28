@@ -7,28 +7,28 @@ class Solution:
     def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
         
         nodeMain = ListNode()
-        node = nodeMain
+        tail = nodeMain
         
-        print(nodeMain, node)
+        print(nodeMain, tail)
         
         while list1 and list2:
             if list1.val < list2.val:
-                node.next = list1
+                tail.next = list1
                 list1 = list1.next
                 
             else:
-                node.next = list2
+                tail.next = list2
                 list2 = list2.next
-            node = node.next
+            tail = tail.next
             
             print('MAIN', nodeMain)
-            print ('TAIL', node)
+            print ('TAIL', tail)
         
         if list1:
-            node.next = list1
+            tail.next = list1
         elif list2:
-            node.next = list2
+            tail.next = list2
         
-        print(node.next)
+        print(tail.next)
         return nodeMain.next
                 
