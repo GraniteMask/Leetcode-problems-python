@@ -1,2 +1,2 @@
 # Leetcode-problems-python
-100+ Leetcode Solutions
+100 Leetcode Solutions
