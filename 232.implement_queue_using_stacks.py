@@ -1,4 +1,4 @@
-class MyStack:
+class MyQueue:
 
     def __init__(self):
         self.q = deque()
@@ -7,20 +7,18 @@ class MyStack:
         self.q.append(x)
 
     def pop(self) -> int:
-        for i in range(len(self.q) - 1):
-            self.push(self.q.popleft())
         return self.q.popleft() 
 
-    def top(self) -> int:
-        return self.q[-1]
+    def peek(self) -> int:
+        return self.q[0]
 
     def empty(self) -> bool:
         return len(self.q) == 0
 
 
-# Your MyStack object will be instantiated and called as such:
-# obj = MyStack()
+# Your MyQueue object will be instantiated and called as such:
+# obj = MyQueue()
 # obj.push(x)
 # param_2 = obj.pop()
-# param_3 = obj.top()
+# param_3 = obj.peek()
 # param_4 = obj.empty()
