@@ -1,3 +1,5 @@
+# Optimized solution - O(n) Time and memory complexity
+
 class Solution:
     def largestRectangleArea(self, heights: List[int]) -> int:
         maxArea = 0
