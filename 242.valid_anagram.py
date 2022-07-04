@@ -15,3 +15,10 @@ class Solution:
                 return True
             else:
                 return False
+
+# Time optimized solution - Not good for space complexity and interviews
+
+class Solution:
+    def isAnagram(self, s: str, t: str) -> bool:
+        
+        return sorted(s) == sorted(t)
