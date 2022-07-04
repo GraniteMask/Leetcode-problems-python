@@ -28,3 +28,5 @@ class Solution:
                 return result
             
         return result
+
+# https://leetcode.com/problems/longest-common-prefix/discuss/2236438/Easy-Python-Solution-(45ms)
